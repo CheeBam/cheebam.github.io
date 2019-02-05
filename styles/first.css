@@ -52,10 +52,6 @@
     padding: 25px 50px;
 }
 
-.full-image {
-    min-height: calc(100vh - 80px);
-}
-
 @media (max-width: 800px){
 
     .first h1{
@@ -75,4 +71,11 @@
         padding: 15px 40px;
     }
 
+}
+
+@media (max-height: 740px) {
+
+    .first{
+        min-height: calc(100vh - 80px);;
+    }
 }

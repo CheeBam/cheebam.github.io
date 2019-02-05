@@ -20,7 +20,7 @@
 
 <body>
     <div class="container">
-        <header class="header" id="header">
+        <header class="header">
             <nav>
                 <ul class="left-menu">
                     <div class="logo"></div>
@@ -310,33 +310,19 @@
 <script>
 
     (function () {
-        let header = document.getElementById('header');
-        let sticky = header.offsetHeight;
+        const header = document.getElementById('header');
+        const sticky = header.offsetHeight;
 
         const addSticky = () => {
-            return () => {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add('sticky');
-                } else {
-                    header.classList.remove('sticky');
-                }
+            if (window.pageYOffset > sticky) {
+                console.log('addSticky');
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
             }
         };
 
-        const checkBg = () => {
-            return () => {
-                const height = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
-                const first = document.getElementById('first');
-                if (+height < 830) {
-                    first.classList.add('full-image');
-                } else {
-                    first.classList.remove('full-image');
-                }
-            }
-        };
-
-        window.addEventListener('resize', checkBg(), false);
-        window.addEventListener('scroll', addSticky(), false);
+        window.addEventListener('scroll', addSticky, false);
     })();
 
 </script>

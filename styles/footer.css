@@ -1,0 +1,127 @@
+footer{
+    background: #0b2a37;
+    color: white;
+    padding: 80px 10px 80px 20px;
+}
+
+footer .grid li{
+    flex-basis: 50%;
+}
+
+footer .grid li:first-child{
+    text-align: left;
+    padding-left: 50px;
+}
+
+footer .block {
+    flex-basis: 33%;
+}
+
+footer .info {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+footer .block h3 {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+footer a {
+    font-size: 12px;
+    color: #dcdee0;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+footer .rights {
+    color: #a3a9ac;
+    font-size: 10px;
+}
+
+footer .follow {
+    display: flex;
+    margin: 15px 0 7px;
+}
+
+footer .follow h3{
+    margin: 10px 10px 0 0;
+}
+
+footer .icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px;
+}
+
+footer .instagram {
+    background: url("../images/inst.png");
+}
+
+footer .twitter {
+    background: url("../images/twit.png");
+}
+
+footer .facebook {
+    background: url("../images/fb.png");
+}
+
+
+.footer-call {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 225px;
+    align-items: center;
+    background: white;
+    color: black;
+}
+
+.footer-call .button{
+    margin: 2rem;
+    padding: 10px 30px;
+}
+
+.footer-call .h2 {
+    margin-top: 1rem;
+    font-size: 36px;
+}
+
+.footer-call .h4 {
+    font-size: 18px;
+}
+
+@media (max-width: 800px){
+
+    footer {
+        padding: 30px;
+    }
+
+    footer ul {
+        flex-direction: column-reverse;
+    }
+
+    footer .grid li:first-child {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    footer .grid li{
+        flex-basis: 100%;
+    }
+
+    footer .logo {
+        margin-top: 30px;
+    }
+
+    footer .info {
+        flex-basis: 100%;
+    }
+
+    footer .follow {
+        margin: 0;
+    }
+}

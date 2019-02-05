@@ -1,0 +1,130 @@
+/*-------------
+ 	Header
+-------------*/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 20px 30px 0;
+}
+
+header .menu-button{
+    font-size: 16px;
+    font-weight: 100;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 5px;
+}
+
+header nav ul span{
+    display: flex;
+    padding: 15px 30px;
+}
+
+header .header-link {
+    padding: 5px 15px;
+}
+
+header .hamburger{
+    background: url("../images/hamburger.png") no-repeat;
+    width: 20px;
+    height: 30px;
+}
+
+header .logo {
+    width: 280px;
+    height: 60px;
+    background:url("../images/logo.png") no-repeat;
+}
+
+@media (min-width: 901px){
+    header .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+
+    header{
+        flex-direction: column-reverse;
+    }
+
+    header h2{
+        margin-bottom: 15px;
+    }
+
+    header .left-menu span {
+        display: none;
+    }
+
+    header .left-menu {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .logo {
+        width: 280px;
+        height: 60px;
+    }
+
+    header .hamburger {
+        margin: -5px 0 0 20px;
+    }
+}
+
+@keyframes fromTop {
+    from {
+        top: -100px
+    }
+
+    to {
+        top: 0
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    color: #0b2a37;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    animation-duration: .5s;
+    animation-name: fromTop;
+}
+
+.sticky .menu-button{
+    color: #0b2a37;
+    border: 1px solid #0b2a37;
+}
+
+.sticky .logo {
+    background: url("../images/logo_red.png") no-repeat;
+    height: 50px;
+    margin: 5px;
+    width: 140px;
+}
+
+.sticky .hamburger {
+    background: url("../images/hamburger_dark.png") no-repeat;
+    margin-top: 5px;
+}

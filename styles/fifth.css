@@ -1,0 +1,78 @@
+/*----------------------
+ 	Fifth Section
+----------------------*/
+
+.fifth {
+    background: url("../images/fifth_background.png");
+    color: white;
+}
+
+.fifth .paragraph p {
+    text-align: left;
+    padding: 5px 0;
+}
+
+.fifth .grid li{
+    flex-basis: 50%;
+}
+
+.fifth hr {
+    width: 20%;
+    height: 4px;
+    background-color: #8ae2e2;
+    margin-bottom: 0;
+}
+
+.fifth .title {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 6rem;
+    text-align: left;
+    padding: 0;
+}
+
+.fifth .right {
+    text-align: left;
+    padding: 0 0 100px 100px;
+}
+
+.fifth .button {
+    padding: 25px 45px;
+}
+
+@media (max-width: 800px){
+
+    .fifth .grid {
+        flex-direction: column-reverse;
+    }
+
+    .fifth .right {
+        text-align: left;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+
+    .fifth .grid li{
+        flex-basis: 100%;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .fifth .title {
+        font-size: 25px;
+        font-weight: 100;
+        line-height: normal;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        flex-basis: 60%;
+    }
+
+    .fifth .button {
+        padding: 15px 25px;
+    }
+}

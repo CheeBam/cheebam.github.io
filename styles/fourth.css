@@ -1,0 +1,64 @@
+/*----------------------
+ 	Fourth Section
+----------------------*/
+
+.fourth {
+    background-color: #ffffff;
+}
+
+.fourth .grid {
+    margin-bottom: 2rem;
+}
+
+.fourth .grid li{
+    flex-basis: 33%;
+}
+
+.fourth .grid li h4{
+    color: #555;
+    font-size: 20px;
+    margin: 35px 0;
+}
+
+.fourth .say {
+    background: #eff7f7;
+}
+
+.fourth .say .arrow {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-top: 25px solid #eff7f7;
+    float: right;
+}
+
+.fourth .say p {
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.fourth .person {
+    display: flex;
+    margin-top: 35px;
+    max-height: 50px;
+    justify-content: start;
+    flex-direction: row-reverse;
+}
+
+.fourth .person p {
+    text-align: right;
+    line-height: 1.4;
+    padding: 3px 10px;
+}
+
+@media (max-width: 800px){
+
+    .fourth .grid {
+        margin-bottom: 0;
+    }
+
+    .fourth .grid li{
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+}

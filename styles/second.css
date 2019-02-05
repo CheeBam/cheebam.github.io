@@ -1,0 +1,68 @@
+/*----------------------
+ 	Second Section
+----------------------*/
+
+.second {
+    background-color: #fff;
+    padding: 20px 50px;
+}
+
+.second .header {
+    display: flex;
+    height: 50px;
+}
+
+.second .grid {
+    flex-direction: row;
+    display: flex;
+    align-items: stretch;
+}
+
+.second .grid li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    position: relative;
+}
+
+.second img {
+    margin: 0 auto;
+}
+
+
+.second .grid li h4{
+    color: #555;
+    font-size: 20px;
+    margin: 35px 0;
+    flex: 1;
+}
+
+@media (max-width: 800px){
+
+    .second .grid li{
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+
+    .second .grid li:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px){
+    .second .grid {
+        flex-direction: column;
+    }
+
+    /*.second .paragraph {*/
+        /*position: inherit;*/
+        /*top: inherit;*/
+    /*}*/
+
+    .second .grid li h4{
+        min-height: 0;
+    }
+
+}
+
+

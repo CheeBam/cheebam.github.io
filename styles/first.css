@@ -5,9 +5,9 @@
 .first{
     position: relative;
     justify-content: center;
-    min-height: calc(100vh - 80px);
     color: #fff;
     text-align: center;
+    min-height: 660px;
 }
 
 .first .background{
@@ -50,6 +50,10 @@
 .first .button{
     margin: 3rem;
     padding: 25px 50px;
+}
+
+.full-image {
+    min-height: calc(100vh - 80px);
 }
 
 @media (max-width: 800px){

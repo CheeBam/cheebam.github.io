@@ -63,6 +63,10 @@ header .logo {
         flex-direction: column-reverse;
     }
 
+    header nav {
+        width: 100%;
+    }
+
     header h2{
         margin-bottom: 15px;
     }
@@ -74,6 +78,7 @@ header .logo {
     header .left-menu {
         align-items: center;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     header .menu {
@@ -107,7 +112,7 @@ header .logo {
     background: #fff;
     color: #0b2a37;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding: 10px;
+    padding: 10px 35px;
     animation-duration: .5s;
     animation-name: fromTop;
 }

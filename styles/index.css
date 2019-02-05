@@ -13,6 +13,12 @@ html{
     color: #555;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+}
+
 ul, ol, nav{
     list-style: none;
 }
